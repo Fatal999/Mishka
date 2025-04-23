@@ -27,11 +27,9 @@
           <img class="header__link-image" src="./img/icons/logo-mobile.svg" width="86" height="35" alt="Лого магазина.">
         </picture>
       </a>
-      <!-- Для закрытого состояния меню, добавьте к кнопке класс "header__toggle--close" -->
-      <button class="header__toggle header__toggle--open" type="button">
+      <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню.</span>
       </button>
-      <!-- Для закрытого состояния меню, добавьте к nav класс "header__navigation--close" -->
       <nav class="header__navigation">
         <ul class="header__main-list">
           <li class="header__main-item">
@@ -119,11 +117,6 @@
           </tr>
         </table>
         <picture>
-          <source type="image/webp" media="(min-width: 1150px)"
-            srcset="./img/index/basket-desktop.webp, ./img/index/basket-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="./img/index/basket-tablet.webp, ./img/index/basket-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="./img/index/basket-mobile.webp, ./img/index/basket-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)"
             srcset="./img/index/basket-desktop.jpg, ./img/index/basket-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)"
@@ -228,11 +221,6 @@
         </table>
       </div>
       <picture>
-        <source type="image/webp" media="(min-width: 1150px)"
-          srcset="./img/index/map-desktop.webp, ./img/index/map-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)"
-          srcset="./img/index/map-tablet.webp, ./img/index/map-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="./img/index/map-mobile.webp, ./img/index/map-mobile@2x.webp 2x">
         <source media="(min-width: 1150px)" srcset="./img/index/map-desktop.jpg, ./img/index/map-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="./img/index/map-tablet.jpg, ./img/index/map-tablet@2x.jpg 2x">
         <img class="contacts__image" src="./img/index/map-mobile.jpg" srcset="./img/index/map-mobile@2x.jpg 2x"
@@ -299,7 +287,7 @@
       </a>
     </div>
   </footer>
-
+  <script src="./js/open-menu.js"></script>
 </body>
 
 </html>

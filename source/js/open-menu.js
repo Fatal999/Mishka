@@ -1,15 +1,13 @@
 /*Mobile menu*/
-let toggle = document.querySelector('.main-nav__mobile-toggle');
-let list = document.querySelector('.main-nav__mobile--open');
-let close = document.querySelector('.main-nav__mobile-close');
+const burgerMenu = document.querySelector('.header__toggle');
+const headerNav = document.querySelector('.header__navigation');
 
-toggle.onclick = function () {
-  list.classList.remove('hidden');
+function toggleMobileMenu() {
+  headerNav.classList.toggle('header__navigation--open');
+  burgerMenu.classList.toggle('header__toggle--open');
 }
 
-close.onclick = function () {
-  list.classList.add('hidden');
-}
+burgerMenu.addEventListener('click', toggleMobileMenu)
 
 /* Modal mobile menu */
 
